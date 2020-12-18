@@ -1,0 +1,21 @@
+.header{
+    height: 879px;
+    width: auto;
+    background: url('../img/hero-image.jpg');
+}
+
+.header_logo {
+   padding-top: 60px;
+    text-align: center;
+}
+
+.header_smartphone {
+ 
+    float: right;
+    margin-right: 148px;
+
+}
+
+.header_title {
+   
+}
