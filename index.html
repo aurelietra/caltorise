@@ -361,27 +361,37 @@
     </div>
     <!-- FORMULAIRE -->
     <div class="form_bg">
-        <div id="subtitle"> PROPOSER UNE ASSOCIATION / UN PROJET ?</div>
-        <div id="form_text">
-            <p>Si vous souhaitez proposer une association et/ou un projet à l’application Caltorise ou devenir sponsor, veuillez utiliser le formulaire de contact.</p>
-        </div>
-        <div id="form">
-            <form>
-                <label for="name">Votre nom</label><br />
-                <input name="name" type="text" value="Nom" /> <br />
-                <label for="name">Votre e-mail</label><br />
-                <input name="name" type="text" value="E-mail" /> <br />
-                <label for="name">Votre sujet</label><br />
-                <input name="name" type="text" value="Sujet" /> <br />
-                <label for="name">Votre message</label><br />
-                <textarea cols="30" rows="2">Message</textarea><br />
-
-                <button type="submit" value="Submit">Envoyer</button>
-            </form>
+        <div id="form_container">
+            <div class="subtitle"> PROPOSER UNE ASSOCIATION / UN PROJET ?</div>
+            <div class="text">
+                <h2>Si vous souhaitez proposer une association et/ou<br>un projet à l’application Caltorise ou devenir<br> sponsor, veuillez utiliser le formulaire de contact.</h2>
+            </div>
+            <div id="form">
+                <form>
+                    <label for="name">Votre nom</label><br />
+                    <input name="name" type="text" placeholder="Nom" /> <br />
+                    <label for="email">Votre e-mail</label><br />
+                    <input name="email" type="text" placeholder="E-mail" /> <br />
+                    <label for="sujet">Votre sujet</label><br />
+                    <input name="sujet" type="text" placeholder="Sujet" /> <br />
+                    <label for="msg">Votre message</label><br />
+                    <textarea id="msg" name="user_message" placeholder="Message"></textarea><br />
+                    <button type="submit" value="Submit">Envoyer</button>
+                </form>
+            </div>
         </div>
     </div>
     <!-- FOOTER -->
     <footer>
-
+       
+        <div id="copyright">
+           <img src="public/logo/logo_en.svg" title="logo" alt="logo" style="width: 200px">
+            <p>&copy;Caltorise, 2020. Tous droits réservés.</p>
+        </div>
+        <div id="mentions">
+            <a href="LIEN_VERS_MA_SOURCE" style="text-decoration:none">CGU</a>
+            <a href="LIEN_VERS_MA_SOURCE" style="text-decoration:none">Mentions légales</a>
+            <a href="LIEN_VERS_MA_SOURCE" style="text-decoration:none">Politiques de confidentialité</a>
+        </div>
     </footer>
 </body></html>
