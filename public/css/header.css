@@ -26,18 +26,17 @@ nav{padding-left: 350px;
      display: flex;
     justify-content: center;
 }
-.selected-lang{
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
+/* LANGUE */
+
+.selectpicker{
+    background-image: url('../icons/lang-fr.svg');
+    background-repeat: no-repeat;
 }
-.selected-lang:before{
-    content: '';
-    display: block;
-    width: 32px;
-    height: 32px;
-    background-image: url(../icons/lang-fr.svg);
+
+#lang_text{
+    padding-left: 20px;
 }
+/* FIN LANGUE */
 
 .header_smartphone {
     position: relative;
