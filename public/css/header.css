@@ -1,21 +1,72 @@
 .header{
-    height: 879px;
-    width: auto;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
     background: url('../img/hero-image.jpg');
+    background-size: cover;
+    z-index: 1;
+    background-repeat: no-repeat;
 }
 
 .header_logo {
+
    padding-top: 60px;
     text-align: center;
+    position: relative;
+
+}
+
+.header_langage{
+    padding-left: 350px;
+    padding-top: 75px;
+}
+nav{padding-left: 350px;
+    margin: 0 auto;
+     display: flex;
+    justify-content: center;
+}
+.selected-lang{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.selected-lang:before{
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../icons/lang-fr.svg);
 }
 
 .header_smartphone {
- 
-    float: right;
-    margin-right: 148px;
+    position: relative;
+    z-index: 2;
+    padding-left: 165px;
+}
+
+.title_smartphone {
+ display: flex;
 
 }
 
+.title {
+    color: white;
+    font-size: 2em;
+    font-family: 'Roboto'
+}
+
+.btn {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_btn_googlestore{
+    padding-left: 20px;
+}
+
+
 .header_title {
-   
+    padding-top: 80px;
+    padding-left:100px;
 }

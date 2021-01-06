@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Caltorise</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="public/css/styles.css">
     <link rel="stylesheet" href="public/css/header.css">
+    <link rel="stylesheet" href="public/css/main.css">
     <script src="main.js"></script>
 </head>
 
@@ -14,30 +21,367 @@
 
 
     <div class="header">
-        <div class="header_logo">
-            <img src="public/logo/logo_fr.svg" title="logo" alt="logo">
-        </div>
-        <div class="header_langage">
-            <select name="langage" id="langage">
-                <option value="french" id="langage">Fr</option>
-                <option value="english" id="langage">Eng</option>
-            </select>
-        </div>
-            
+        <!-- LOGO + LANG -->
+        <nav>
+            <div class="header_logo">
+                <img src="public/logo/logo_fr.svg" title="logo" alt="logo">
+            </div>
+            <div class="header_langage">
+                <div class="selected_lang">
+                    FR
+                </div>
+            </div>
+        </nav>
+        <!-- TITRE ET BTN -->
+        <div class="title_smartphone">
             <div class="header_title">
-                <h2>Mes calories pour <br> une cause</h2>
+                <div class="title">
+                    <h2>Mes calories pour <br> une cause</h2>
+                </div>
+
+                <div class="btn">
+                    <div class="header_btn_appstore">
+                        <a href=""><img src="public/icons/appstore.svg"></a>
+                    </div>
+                    <div class="header_btn_googlestore">
+                        <a href="https://play.google.com/store/apps/details?id=com.calorise"><img src="public/icons/googleplay.svg"></a>
+                    </div>
+                </div>
             </div>
-            <div class="header_btn_appstore">
-                <a href=""><img src="public/icons/appstore.svg"></a>
-            </div>
-            <div class="header_btn_googlestore">
-                <a href="https://play.google.com/store/apps/details?id=com.calorise"><img src="public/icons/googleplay.svg"></a>
-            </div>
+            <!-- TELEPHONE -->
             <div class="header_smartphone">
-                <img src="public/img/smartphones-627x887.png" alt="smartphone" title="smartphone">
+                <img src="public/img/smartphones-627x887.png" alt="smartphone" title="smartphone" style="width: 450px;">
             </div>
-
-
+        </div>
     </div>
 
+    <!--MAIN UN -->
+    <div class="main_un">
+
+        <!--QU'EST CE QUE CALTORISE -->
+        <div class="container">
+            <div class="subtitle">
+                <p> QU'EST CE QUE CALTORISE ?</p>
+            </div>
+            <div class="text">
+                <h2>Une solutions innovante pour<br> soutenir des associaions et leurs <br> projets humanitaires </h2>
+            </div>
+            <div class="bloc_text">
+
+                <p id="para_un"> Caltorise est une application mobile gratuite qui propose une solution innovante pour soutenir des associations et leurs projets humanitaires sans pour autant changer le quotidien des personnes qui souhaitent aider. Grâce à une formule mathématique, Caltorise calcule la dépense individuelle journalière en calories et la valorise pour permettre aux utilisateurs de faire des micro-dons. </p>
+
+                <p id="para_deux"> Symboliquement, l’application propose aux utilisateurs de sélectionner un maximum de 5 activités du quotidien, parmi près de 200, qui leur procurent une notion de plaisir. Caltorise permet aux utilisateurs de soutenir un projet parmi différents choix et d’acquérir une vision concrète et transparente de l’utilisation de leurs dons grâce aux réseaux sociaux et autres médias de communication. </p>
+
+            </div>
+            <div id="trait">
+            </div>
+        </div>
+        <!--A QUI S'ADRESSE CALTORISE -->
+        <div class="container">
+            <div class="subtitle">
+                <p> A QUI S'ADRESSE CALTORISE ?</p>
+            </div>
+            <div class="text">
+                <h2>Toute personne souhaitant avoir<br> un impact concret sur la vie de<br> ceux qui en ont le plus besoin</h2>
+            </div>
+
+            <div class="bloc_text">
+                <p id="para_un"> L’application Caltorise s’adresse à toute personne ayant conscience que le simple fait de respirer et donc dépenser des calories, ceci au travers la pratique d’activités pour son plaisir, est une chance que certains n’ont malheureusement pas. </p>
+
+                <p id="para_deux"> L’application Caltorise offre une solution à toute personne souhaitant avoir un impact concret sur la vie de ceux qui en ont le plus besoin, sans toutefois rien changer à son propre quotidien. </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN TWO -->
+    <div class="main_deux">
+        <div class="container_un">
+            <div class="subtitle">
+                <p> POURQUOI UTILISER CALTORISE ? </p>
+            </div>
+            <div class="text_italique">
+                <h2>"Aider, oui ! Mais à condition<br> que cela ne change rien à mon<br>quotidien!"</h2>
+            </div>
+            <div class="bloc_text">
+                <p id="para_trois"> Grâce à l'application Caltorise, les utilisateurs <strong>ne changent rien à leur quotidien</strong> et continuent de faire les activités qui leur procurent du plaisir, tout en faisant des dons aux associations qui en ont besoin ! </p>
+
+            </div>
+        </div>
+        <div id="para_quatre">
+            <div id="petit_trait"></div>
+            <div class="budget">
+                <img id="icons" src="public/icons/icon-budget.svg" title="budget" alt="budget" style="width: 30px">&nbsp;<p>Chacun a son propre&nbsp;</p>
+                <p id="text_blue">budget à respecter</p>
+            </div>
+            <div id="petit_trait"> </div>
+            <div class="temps">
+                <img id="icons" src="public/icons/icon-time.svg" title="time" alt="time" style="width: 30px">&nbsp;<p>Chacun a un &nbsp;</p>
+                <p id="text_blue">temps libre limité</p>
+            </div>
+            <div id="petit_trait"></div>
+            <div class="famille">
+                <img id="icons" src="public/icons/icon-family.svg" title="family" alt="family" style="width: 30px">&nbsp;<p>Chacun a une&nbsp;</p>
+                <p id="text_blue">famille</p>
+                <p>, des&nbsp;</p>
+                <p id="text_blue"> amis</p>
+                <p>, un&nbsp;</p>
+                <p id="text_blue">travail</p>
+            </div>
+            <div id="petit_trait"> </div>
+        </div>
+    </div>
+
+    <!-- VALEURS -->
+    <div class="valeur">
+        <div class="valeur_block_un">
+            <div class="valeur_header">
+                <div class="subtitle">
+                    <p> NOS VALEURS</p>
+                </div>
+                <div class="text">
+                    <h2>Parce que chacun à une<br> sensibilité qui lui est propre </h2>
+                </div>
+            </div>
+            <div class="para_cinq">
+                <img src="public/icons/icon-plaisir.svg" title="plaisir" alt="plaisir" style="width: 30px">
+                <p id="valeur_subtitle">Le Plaisir</p>
+                <div id="petit_blue"></div>
+                <p class="valeur_text"> Ressentez le plaisir de faire vos activités préférées tout en aillant conscience que cette chance n’est pas donnée à tout le monde.<br> Symboliquement, faites « don » des calories que produit votre corps à ceux qui en ont le plus besoin.</p>
+            </div>
+            <div class="para_six">
+                <img src="public/icons/icon-collectivement.svg" title="collectivement" alt="collectivement" style="width: 30px">
+                <p id="valeur_subtitle">Collectivement faire une différence</p>
+                <div id="petit_blue"></div>
+                <p class="valeur_text"> Le micro-don peut sembler peu impactant à l’échelle individuelle, mais il est la clé du succès pour tous les projets soutenus.<br>
+                    Du fait que l’application Caltorise permet à toutes et tous de faire un don à travers son activité, le micro-don ne nécessite pas d’effort supplémentaire, ni en temps, ni en énergie, et n’a quasiment aucun impact en termes d’argent pour l’utilisateur.</p>
+            </div>
+            <div class="para_sept">
+                <img src="public/icons/icon-transparence.svg" title="transparence" alt="transparence" style="width: 30px">
+                <p id="valeur_subtitle">Transparence des dons</p>
+                <div id="petit_blue"></div>
+                <p class="valeur_text"> Un donateur donne pour aider ceux qui en ont besoin.<br>
+                    L’application Caltorise limite au strict minimum ses frais de fonctionnement et permet ainsi de valoriser les dons ; c’est pourquoi seuls sont prélevés sur les dons :<br>
+                    — Les frais du prestataire des moyens de paiement (STRIPE)<br>
+                    — Les frais de fonctionnement de l’application (maximum 5%)</p>
+            </div>
+            <div class="para_huit">
+                <img src="public/icons/icon-visibilite.svg" title="visibilite" alt="visibilite" style="width: 30px">
+                <p id="valeur_subtitle">Visibilité</p>
+                <div id="petit_blue"></div>
+                <p class="valeur_text"> Beaucoup d’associations font un travail remarquable mais passent un temps infini à rechercher des fonds pour leurs projets car elles ne bénéficient pas de l’exposition médiatique des grandes ONG.
+                    <br><br>
+                    L’application Caltorise utilise les moyens de communications de son époque, les réseaux sociaux, pour promouvoir le travail de ces associations et leurs projets.
+                </p>
+            </div>
+        </div>
+        <div class="valeur_block_deux">
+            <div class="valeur_image">
+                <img src="public/img/nos-valeurs-image.png" title="valeurs" alt="valeurs" style="width: 500px">
+            </div>
+            <div class="para_neuf">
+                <img src="public/icons/icon-apporter.svg" title="apporter" alt="apporter" style="width: 30px">
+                <p id="valeur_subtitle">Apporter du concret</p>
+                <div id="petit_blue"></div>
+                <p class="valeur_text"> Un donateur doit savoir concrètement ce qui est réalisé avec son don.<br>
+
+                    Dès qu’un projet est mené à bien, Caltorise utilise les réseaux sociaux et autres médias de communication modernes afin de donner un retour concret aux utilisateurs de ce qui est réalisé avec leur don.
+                </p>
+            </div>
+            <div class="para_dix">
+                <img src="public/icons/icon-sensibilite.svg" title="sensibilite" alt="sensibilite" style="width: 30px">
+                <p id="valeur_subtitle">Sensibilité</p>
+                <div id="petit_blue"></div>
+                <p class="valeur_text"> Parce que chacun à une sensibilité qui lui est propre, Caltorise propose des projets provenant de domaines variés.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FONCTIONNEMENT CALTORISE -->
+    <div id="fonction_un">
+        <div class="fonction_title">
+            <p>
+                Comment fonctionne Caltorise ?
+            </p>
+        </div>
+        <div id="etape_block_un">
+            <div id="etape">
+                <img id="etape_img" src="public/img/howto-1.png" title="howto1" alt="howto1" style="width: 200px;">
+                <div id="nb">1</div>
+                <p id="etape_subtitle">Télécharger l'application Caltorise</p>
+                <p id="etape_text"> Disponible en français et en anglais.</p>
+            </div>
+            <div id="etape">
+                <img id="etape_img" src="public/img/howto-2.png" title="howto2" alt="howto2" style="width: 200px;">
+                <div id="nb">2</div>
+                <p id="etape_subtitle">Créer son profil et calculer sa dépense en calories</p>
+                <p id="etape_text">— Votre sexe, âge, taille et poids et constituent votre Métabolisme de Base.<br>
+                    — Votre Mode de Vie est utilisé pour finaliser votre dépense théorique en calories.<br>
+                    — Vos activités choisies sont en lien avec les sponsors qui seront affichés sur votre parcours utilisateur.</p>
+            </div>
+            <div id="etape">
+                <img id="etape_img" src="public/img/howto-3.png" title="howto3" alt="howto3" style="width: 200px;">
+                <div id="nb">3</div>
+                <p id="etape_subtitle">Choisir un projet à soutenir et valider son don </p>
+                <p id="etape_text">— Selon votre sensibilité, sélectionner un projet.<br>
+                    — Votre don peut être modifié selon vos envies.</p>
+            </div>
+        </div>
+        <div id="etape_block_deux">
+            <div id="etape">
+                <img id="etape_img" src="public/img/howto-4.png" title="howto4" alt="howto4" style="width: 200px;">
+                <div id="nb">4</div>
+                <p id="etape_subtitle">Chaque mois l’application Caltorise vous demande de valider vos calories et de choisir un projet.</p>
+                <p id="etape_text"> — Ajustez votre dépense en calories si besoin<br>
+                    — Changez de projet chaque mois si vous le souhaitez.</p>
+            </div>
+            <div id="etape">
+                <img id="etape_img" src="public/img/howto-5.png" title="howto5" alt="howto5" style="width: 200px;">
+                <div id="nb">5</div>
+                <p id="etape_subtitle">Dès que le montant total d’un projet est intégralement récolté, le projet est lancé</p>
+                <p id="etape_text">— Suivez la récolte des dons en direct sur l’application.</p>
+            </div>
+            <div id="etape">
+                <img id="etape_img" src="public/img/howto-6.png" title="howto6" alt="howto6" style="width: 200px;">
+                <div id="nb">6</div>
+                <p id="etape_subtitle">Vous recevez une notification avec des liens sur les réseaux sociaux pour voir le résultat concret du projet, en photos et en vidéos. </p>
+                <p id="etape_text">— Les réseaux sociaux vous relaient les actions concrètes menées grâce à vos dons.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SPONSORS -->
+    <div class="sponsors">
+        <div id="sponsor_title">
+            <p>A QUOI SERVENT LES SPONSORS ?</p>
+        </div>
+        <div id="sponsor_img_text">
+            <div id="sponsor_img">
+                <div id="sponsor_img1">
+                    <img src="public/icons/sponsor1.svg" title="sponsor1" alt="sponsor1" style="width: 130px">
+                </div>
+                <div id="sponsor_img2">
+                    <img src="public/icons/sponsor2.svg" title="sponsor2" alt="sponsor2" style="width: 130px">
+                </div>
+
+            </div>
+            <div id="sponsor_text">
+                <p>Un sponsor est toute personne morale ou physique souhaitant bénéficier des plages de visibilité qu’offre l’application Caltorise lors du parcours utilisateur.<br><br>
+                    Les sponsors soutiennent l’application Caltorise en couvrant tous ses frais de fonctionnement afin que les dons soient transmis au plus proche de leur intégralité aux associations.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- TRAIT -->
+    <div id="trait_sponsor"></div>
+
+
+    <!-- PROJETS -->
+    <div class="projets">
+        <div id="projet_title">
+            <p>NOS PREMIERS PROJETS</p>
+        </div>
+        <div id="projets">
+            <div id="block">
+
+                <div id="projet_img">
+                    <img src="public/img/projet1.png" title="projet1" alt="projet1" style="width: 300px">
+                </div>
+                <div id="projet_subtitle">
+                    Toit pour tous, tous pour toi
+                </div>
+                <div id="projet_text">
+                    <p>Mise en place d’un éco-village à Avusy, avec des habitats destinés aux personnes en situation de transition, démunies ou en détresse, auto-suffisants avec jardins potagers biologiques.
+                        Le projet « Tiny House » consiste en diverses unités d’habitations sur roues de 20 m2 habitables avec terrasse rabattable…</p>
+                    <p id="projet_text_bleu">Découvrir les projets actuels ></p>
+                </div>
+            </div>
+            <div id="block">
+                <div id="projet_img">
+                    <img src="public/img/projet2.png" title="projet2" alt="projet2" style="width: 300px">
+                </div>
+                <div id="projet_subtitle">
+                    Porte-Bonheur
+                </div>
+                <div id="projet_text">
+                    <p>Les pupilles de l’association sont accompagnés, tout au long de l’année, dans leur projet et dans leurs rêves. Et même s’ils ne sont plus dans le besoin immédiat, ils restent un membre de la famille Porte-Bonheur. A chacun de leur anniversaire et jusqu’à l’âge de 25 ans, un bon de 50.- leur est offert avec une carte de vœux…</p>
+                    <p id="projet_text_bleu">Découvrir les projets actuels ></p>
+                </div>
+            </div>
+            <div id="block">
+                <div id="projet_img">
+                    <img src="public/img/projet3.png" title="projet3" alt="projet3" style="width: 300px">
+                </div>
+                <div id="projet_subtitle">
+                    Un Coeur sans Toit
+                </div>
+                <div id="projet_text">
+                    <p>Aider à stériliser des chats « libres ».
+                        Ce sont pour la plupart des chats nés dans la rue qui ne conviennent pas à la vie de famille.
+                        Leur stérilisation évitera la naissance d’autres petits malheureux de la rue.
+                        Nous nous concentrerons plutôt sur la stérilisation des femelles…</p>
+                    <p id="projet_text_bleu">Découvrir les projets actuels ></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- REJOIGNEZ NOUS -->
+    <div class="app_bg">
+        <div id="app">
+            <div id="app_info">
+                <img src="public/icons/download.svg" title="download" alt="download" style="width: 190px">
+            </div>
+            <div id="app_info_text">
+                <p id="app_text">Rejoignez-nous dès maintenant</p>
+                <div id="icon">
+                    <img src="public/icons/appstore.svg" title="appstore" alt="appstore" style="width: 162px">
+                    <img src="public/icons/googleplay.svg" title="googleplay" alt="googleplay" style="width: 162px">
+                </div>
+            </div>
+            <div id="app_info">
+                <img src="public/icons/download.svg" title="download" alt="download" style="width: 190px">
+            </div>
+        </div>
+    </div>
+
+    <!-- RESEAUX SOCIAUX -->
+    <div class="rs_bg">
+        <div id="rs_info">
+            <p id="rs_text">Suivez-nous sur les réseaux sociaux </p>
+            <div id="rs_logo">
+                <img src="public/icons/ig.svg" title="instagram" alt="instagram" style="width: 62px">
+                <img src="public/icons/fb.svg" title="facebook" alt="facebook" style="width: 62px">
+                <img src="public/icons/tw.svg" title="tweeter" alt="tweeter" style="width: 62px">
+                <img src="public/icons/yt.svg" title="youtube" alt="youtube" style="width: 62px">
+                <img src="public/icons/in.svg" title="linkedin" alt="linkedin" style="width: 62px">
+            </div>
+        </div>
+    </div>
+    <!-- FORMULAIRE -->
+    <div class="form_bg">
+        <div id="subtitle"> PROPOSER UNE ASSOCIATION / UN PROJET ?</div>
+        <div id="form_text">
+            <p>Si vous souhaitez proposer une association et/ou un projet à l’application Caltorise ou devenir sponsor, veuillez utiliser le formulaire de contact.</p>
+        </div>
+        <div id="form">
+            <form>
+                <label for="name">Votre nom</label><br />
+                <input name="name" type="text" value="Nom" /> <br />
+                <label for="name">Votre e-mail</label><br />
+                <input name="name" type="text" value="E-mail" /> <br />
+                <label for="name">Votre sujet</label><br />
+                <input name="name" type="text" value="Sujet" /> <br />
+                <label for="name">Votre message</label><br />
+                <textarea cols="30" rows="2">Message</textarea><br />
+
+                <button type="submit" value="Submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+
+    </footer>
 </body></html>
