@@ -21,22 +21,7 @@
     padding-left: 350px;
     padding-top: 75px;
 }
-nav{padding-left: 350px;
-    margin: 0 auto;
-     display: flex;
-    justify-content: center;
-}
-/* LANGUE */
 
-.selectpicker{
-    background-image: url('../icons/lang-fr.svg');
-    background-repeat: no-repeat;
-}
-
-#lang_text{
-    padding-left: 20px;
-}
-/* FIN LANGUE */
 
 .header_smartphone {
     position: relative;
