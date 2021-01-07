@@ -34,14 +34,13 @@
     margin: 0;
     padding: 0;
     display: none;
-    background-color: #fff;
-    border: 1px solid #f8f8f8;
+    background-color: ;
+    border: 1px solid #707070;
     position: absolute;
-    top: 45px;
+    top: 25px;
     right: 0px;
-    width: 80px;
-    border-radius: 5px;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    width: 65px;
+    border-radius: 3px;
 }
 
 
@@ -54,13 +53,14 @@
 
 .lang-menu ul li a {
     text-decoration: none;
-    width: 125px;
-    padding: 5px 10px;
+    width: 65px;
     display: block;
+    text-decoration: none;
+    color: white;
 }
 
 .lang-menu ul li:hover {
-    background-color: #f2f2f2;
+    background-color: ;
 }
 
 .lang-menu ul li a:before {
@@ -77,6 +77,7 @@
 
 .en:before {
     background-image: url(https://www.countryflags.io/gb/flat/32.png);
+    margin-left: 3px;
 }
 
 .fr:before {
@@ -86,6 +87,8 @@
 
 .lang-menu:hover ul {
     display: block;
+    
 }
+
 
 /* FIN LANGUE */
