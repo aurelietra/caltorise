@@ -1,11 +1,72 @@
-body, html {
+body,
+html {
     width: 100%;
-    height: 100%;
+    height: auto;
+    max-width: 1388px;
+    min-width: 768px;
     margin: 0;
     padding: 0 100 0 100;
 }
 
 
-@media only screen and (max-width 1000px){
-    
+
+/* RESPONSIVE */ 
+
+@media(min-width: 426px) and (max-width: 767px) {
+    /* CSS lorsque l'utilisateur est sur tablette */
+
+    body, nav, header {
+        /* prend header et footer */
+        width: 100%;
+        padding: 0 100 0 100;
+    }
+    .title_smartphone,
+    .main_un,
+    .main_deux,
+    .valeur,
+    .sponsors,
+    .projets,
+    .app_bg,
+    .rs_bg,
+    .form_bg {
+
+        width: 100%;
+        padding: 0 100 0 100;
+    }
+
+    #fonction_un,
+    #trait_sponsor {
+        width: 100%;
+        padding: 0 100 0 100;
+    }
+
+}
+
+
+
+
+@media(max-width: 425px) {
+
+    /*  CSS lorsque l'utilisateur est sur smartphone */
+    body {
+        /* prend header et footer */
+        width: 100%;
+    }
+
+    .main_un,
+    .main_deux,
+    .valeur,
+    .sponsors,
+    .projets,
+    .app_bg,
+    .rs_bg,
+    .form_bg {
+
+        width: 100%;
+    }
+
+    #fonction_un,
+    #trait_sponsor {
+        width: 100%;
+    }
 }
